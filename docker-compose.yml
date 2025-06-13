@@ -1,0 +1,13 @@
+name: portfolio_02
+
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    volumes:
+      - ./:/portfolio_02
+      - /portfolio_02/node_modules
+    ports:
+      - 3000:3000
