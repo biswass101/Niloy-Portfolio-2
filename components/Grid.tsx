@@ -14,6 +14,7 @@ export default function Grid() {
                     img={item.img}
                     imgClassName={item.imgClassName}
                     spareImg={item.spareImg}
+                    titleClassName={item.titleClassName}
                 />
             ))}
         </BentoGrid>
